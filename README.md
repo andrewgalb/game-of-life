@@ -1,16 +1,22 @@
 # Game Of Life
 
-I denna uppgift ska ni ta fram en variant av (Conway's Game of Life)[https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life].
+I denna uppgift ska ni ta fram en variant av [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
+
+## Kod
+Uppgift ska genomfÃ¶ras grafiskt i Windows Forms. Till hjÃ¤lp fÃ¥r ni ett befintligt projekt med fÃ¤rdigstÃ¤llda metoder som du kan ha nytta av. 
+
++ gameTimer_Tick :denna metoden anropas nÃ¤r en viss tidsintervall har gÃ¥tt. Tidsintervallen kan Ã¤ndras och sjÃ¤lva timern (gameTimer) kan startas och stoppas.
++ GameOfLifeForm_Paint: denna metoden anvÃ¤nds fÃ¶r att mÃ¥la spelet. HÃ¤r behÃ¶ver du ha koden som ritar de olika celler. FÃ¶rmodligen vill du mÃ¥la om spelet vid varje tidsintervall. Metoden kan inte anropas direkt, utan metoden **Invalidate()** mÃ¥ste anropas, vilket i sin tur anropar GameOfLifeForm_Paint().   
 
 
 
 ## Regler.
 
-Simuleringen sker på ett tvådimensionellt rutnät. Rutorna (cellerna) kan vara på eller av. Brädets utseende förändras enligt följande regler:
+Simuleringen sker pÃ¥ ett tvÃ¥dimensionellt rutnÃ¤t. Rutorna (cellerna) kan vara pÃ¥ eller av. BrÃ¤dets utseende fÃ¶rÃ¤ndras enligt fÃ¶ljande regler:
 
-+ En cell föds om den har exakt tre grannar. Som grannar räknas direkt intill-liggande rutor horisontellt, lodrätt eller diagonalt.
-+ En cell dör om den har färre än två grannar (isolering) eller om den har fler än tre grannar (trängsel).
-+ I övrigt förblir cellen oförändrad. 
++ En cell fÃ¶ds om den har exakt tre grannar. Som grannar rÃ¤knas direkt intill-liggande rutor horisontellt, lodrÃ¤tt eller diagonalt.
++ En cell dÃ¶r om den har fÃ¤rre Ã¤n tvÃ¥ grannar (isolering) eller om den har fler Ã¤n tre grannar (trÃ¤ngsel).
++ I Ã¶vrigt fÃ¶rblir cellen ofÃ¶rÃ¤ndrad. 
 
-Observera att huruvida en cell skall förändras skall beräknas innan någon cell förändras. Man måste med andra ord räkna ut hela brädet innan man går över till nästa tur (generation).
+Observera att huruvida en cell skall fÃ¶rÃ¤ndras skall berÃ¤knas innan nÃ¥gon cell fÃ¶rÃ¤ndras. Man mÃ¥ste med andra ord rÃ¤kna ut hela brÃ¤det innan man gÃ¥r Ã¶ver till nÃ¤sta tur (generation).
 
