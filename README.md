@@ -13,7 +13,9 @@ Simuleringen sker på ett tvådimensionellt rutnät. Rutorna (cellerna) kan vara
 Observera att huruvida en cell skall förändras skall beräknas innan någon cell förändras. Man måste med andra ord räkna ut hela brädet innan man går över till nästa tur (generation).
 
 ## Kod
-Uppgift ska genomföras grafiskt i Windows Forms. Till hjälp får ni ett befintligt projekt med färdigställda metoder som ni kan ha nytta av. 
+Uppgift ska genomföras grafiskt i Windows Forms. Till hjälp får ni ett befintligt projekt med färdigställda metoder som ni kan ha nytta av. I projektet finns en form med en timer..så du behöver inte lägga till en timer. 
+
+Följande metoder finns:
 
 + gameTimer_Tick :denna metoden anropas när en viss tidsintervall har gått. Tidsintervallen kan ändras och själva timern (gameTimer) kan startas och stoppas.
 + GameOfLifeForm_Paint: denna metoden används för att måla spelet. Här behöver du ha koden som ritar de olika celler. Förmodligen vill du måla om spelet vid varje tidsintervall. Metoden kan inte anropas direkt, utan metoden **Invalidate()** måste anropas, vilket i sin tur anropar GameOfLifeForm_Paint().   
