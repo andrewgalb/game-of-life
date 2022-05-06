@@ -26,9 +26,9 @@ Genom hela uppgiften har ni nytta av [2D arrayer i C#](https://docs.microsoft.co
 
 Denna är en svår uppgift och det rekommenderas att ni arbetar i följande steg:
 
-1: Repetera hur ni ritar en ifylld rektangel i Windows Forms.
-2: Skapa en 2D array som representerar alla celler i spelet. En array av int är lämplig, och att ni representerar en levande cell med en 1, en död cell med en 0. Fyll array:n med test data.
-3: Skriv koden måste rita ut array:n på skärmen. Tips: ni har nytta av en nästlade for-sliinga här.
+1: Repetera hur ni ritar en ifylld rektangel i Windows Forms.  
+2: Skapa en 2D array som representerar alla celler i spelet. En array av int är lämplig, och att ni representerar en levande cell med en 1, en död cell med en 0. Fyll array:n med test data.  
+3: Skriv koden måste rita ut array:n på skärmen. Tips: ni har nytta av en nästlade for-sliinga här.  
 4: 
 
 
